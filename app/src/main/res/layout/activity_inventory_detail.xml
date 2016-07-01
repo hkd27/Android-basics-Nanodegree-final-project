@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hemantdave.inventoryappfinalproject.InventoryDetail">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/detailsTitleTV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/detailsIV"
+        android:layout_below="@+id/detailsTitleTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity"
+        android:id="@+id/detailsQuantityTV"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/detailsPriceTV"
+        android:layout_below="@+id/detailsQuantityTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sales"
+        android:id="@+id/detailsSalesTV"
+        android:layout_below="@+id/detailsPriceTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order More"
+        android:id="@+id/detailsOrderMoreButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#51d3f3"
+        android:onClick="orderMore" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/detailsDeleteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#f46969"
+        android:onClick="deleteThisItem" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity +1"
+        android:id="@+id/detailQuantityPlus"
+        android:background="#49f276"
+        android:padding="5dp"
+        android:layout_below="@+id/detailsSalesTV"
+        android:layout_alignRight="@+id/detailsOrderMoreButton"
+        android:layout_alignEnd="@+id/detailsOrderMoreButton"
+        android:layout_margin="5dp"
+        android:onClick="quantityPlus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity -1"
+        android:id="@+id/detailQuantityMinus"
+        android:background="#5cddee"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/detailQuantityPlus"
+        android:layout_alignLeft="@+id/detailsDeleteButton"
+        android:layout_alignStart="@+id/detailsDeleteButton"
+        android:layout_margin="5dp"
+        android:onClick="quantityMinus" />
+
+</RelativeLayout>
+</ScrollView>

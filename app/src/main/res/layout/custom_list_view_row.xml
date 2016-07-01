@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/inventoryTitleTV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/inventoryIV"
+        android:layout_below="@+id/inventoryTitleTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity"
+        android:id="@+id/inventoryQuaTV"
+        android:layout_below="@+id/inventoryIV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/inventoryPriceTV"
+        android:layout_below="@+id/inventoryQuaTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sales"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/inventorySalesTV"
+        android:layout_below="@+id/inventoryPriceTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold One"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="#56b5f5"
+        android:layout_below="@+id/inventoryEmailTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="modifyInventory"
+        android:id="@+id/inventorysaleButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email"
+        android:id="@+id/inventoryEmailTV"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/inventorySalesTV"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
